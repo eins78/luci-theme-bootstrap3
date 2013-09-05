@@ -1,0 +1,41 @@
+/* Extend class names for LuCI */
+
+.cbi-map-descr,
+.cbi-section-descr {
+  &:extend(p);
+}
+
+form .cbi-value {
+  &:extend(form .clearfix all);
+}
+
+form .cbi-value-field {
+  &:extend(form .input);
+}
+
+form .cbi-value label.cbi-value-title {
+  &:extend(label);
+}
+
+.cbi-page-actions {
+  &:extend(.actions all);
+}
+
+header {
+  &:extend(.topbar all);
+}
+
+.cbi-tabmenu {
+  &:extend(.tabs all);
+}
+
+.cbi-button {
+  &:extend(.btn all);
+}
+
+.cbi-page-actions .cbi-button-apply,
+.cbi-page-actions .cbi-button-save,
+.cbi-page-actions .cbi-button-reset {
+  &:extend(.btn.primary);
+}
+
