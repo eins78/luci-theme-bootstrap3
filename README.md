@@ -1,5 +1,16 @@
-BOOTSTRAP FOR LUCI
+BOOTSTRAP3 FOR LUCI — `LESS.css` remake
 =================
+
+---
+
+**work-in-progress**
+
+This fork is a remake/port of [luci-theme-bootstrap](https://github.com/nutbolt/luci-theme-bootstrap) 
+using [`LESS.css`](http://lesscss.org) (as `bootstrap` is built with it). 
+
+Built with [themestrap](https://github.com/divshot/themestrap).
+
+---
 
 Bootstrap is a clean HTML5 theme for LuCI - the web configuration interface commonly found on OpenWrt installation. It is based on Bootstrap, Twitter's toolkit for kickstarting CSS for websites, apps, and more. 
 It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more.
