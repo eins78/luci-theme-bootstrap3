@@ -7,7 +7,7 @@ module.exports = (grunt) ->
           compress: false
           paths: ['less', 'tmp', '<%= bowerDirectory %>/bootstrap/lib']
         files:
-          'dist/web/css/bootstrap.css': ['less/theme.less']
+          'dist/web/css/bootstrap.css': ['less/themestrap.less']
     recess:
       dist:
         options:
