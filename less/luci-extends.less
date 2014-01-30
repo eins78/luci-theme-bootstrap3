@@ -1,0 +1,129 @@
+/* Extend class names for LuCI */
+
+.cbi-map-descr,
+.cbi-section-descr {
+  &:extend(p);
+}
+
+form .cbi-value {
+  &:extend(form .clearfix all);
+}
+
+form .cbi-value-field {
+  &:extend(form .input);
+}
+
+form .cbi-value label.cbi-value-title {
+  &:extend(label);
+}
+
+.label {
+  &:extend(.label-default);
+}
+
+.label.success {
+  &:extend(.label-success);
+}
+
+.cbi-page-actions {
+  &:extend(.actions all);
+}
+
+//
+// header > navbar-default
+header {
+  &:extend(.navbar all);
+  &:extend(.navbar-inverse all);
+  &:extend(.navbar-fixed-top all);
+}
+
+//
+// TODO: navs
+.cbi-tabmenu, .tabs {
+  &:extend(.nav all);
+  &:extend(.nav-tabs all);
+}
+// TODO: ???
+.tabs {
+  &:extend(.nav all);
+  &:extend(.nav-tabs all);
+}
+.cbi-page-actions .cbi-button-apply,
+.cbi-page-actions .cbi-button-save,
+.cbi-page-actions .cbi-button-reset {
+  &:extend(.btn.primary);
+}
+
+// Tables
+.cbi-section-table {
+  &:extend(.table all);
+  &:extend(.table-hover all);
+  &:extend(.table-responsive all);
+  width: 100%;
+}
+
+// Buttons
+
+.cbi-button {
+  &:extend(.btn all);
+}
+
+.cbi-button-up,
+.cbi-input-up {
+  &:extend(.btn-default all);
+}
+
+.cbi-button-down,
+.cbi-input-down {
+  &:extend(.btn-default all);
+}
+
+.cbi-button-find,
+.cbi-input-find {
+  &:extend(.btn-primary all);
+}
+
+.cbi-button-add,
+.cbi-input-add {
+  &:extend(.btn-default all);
+}
+
+.cbi-button-apply,
+.cbi-input-apply {
+  &:extend(.btn-success all);
+}
+
+.cbi-button-apply,
+.cbi-input-apply {
+  &:extend(.btn-save all);
+}
+
+.cbi-button-reset,
+.cbi-input-reset {
+  &:extend(.btn-warning all);
+}
+
+.cbi-button-edit,
+.cbi-input-edit {
+  &:extend(.btn-default all);
+}
+
+.cbi-button-remove,
+.cbi-input-remove {
+  &:extend(.btn-danger all);
+}
+
+.cbi-button-reload,
+.cbi-input-reload {
+  &:extend(.btn-success all);
+}
+
+.cbi-button-link,
+.cbi-input-link {
+  &:extend(.btn-default all);
+}
+
+.cbi-button-download,
+.cbi-input-download {
+  &:extend(.btn-success all);
+}
