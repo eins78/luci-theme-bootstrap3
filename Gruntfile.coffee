@@ -7,13 +7,13 @@ module.exports = (grunt) ->
           compress: false
           paths: ['less', 'tmp', '<%= bowerDirectory %>/bootstrap/lib']
         files:
-          'dist/css/bootstrap.css': ['less/theme.less']
+          'dist/web/css/bootstrap.css': ['less/theme.less']
     recess:
       dist:
         options:
           compile: true
         files:
-          'dist/css/bootstrap.css': ['dist/css/bootstrap.css']
+          'dist/css/bootstrap.css': ['dist/web/css/bootstrap.css']
     watch:
       less:
         files: ['less/*.less']
@@ -21,7 +21,7 @@ module.exports = (grunt) ->
         options:
           livereload: true
       cssmin:
-        files: ['dist/css/bootstrap.css']
+        files: ['dist/web/css/bootstrap.css']
         tasks: ['cssmin:minify']
       assemble:
         files: ['pages/*.html', 'pages/examples/*', 'README.md']
@@ -29,9 +29,9 @@ module.exports = (grunt) ->
     cssmin:
       minify:
         expand: true
-        cwd: 'dist/css'
+        cwd: 'dist/web/css'
         src: ['*.css', '!*.min.css']
-        dest: 'dist/css'
+        dest: 'dist/web/css'
         ext: '.min.css'
     connect:
       serve:
@@ -43,7 +43,7 @@ module.exports = (grunt) ->
         options:
           data: './bower.json',
           flatten: true,
-          assets: 'dist'
+          assets: 'dist/web'
         files:
           'index.html': ['pages/index.html'],
           'examples/': ['pages/examples/*.html']
@@ -51,7 +51,7 @@ module.exports = (grunt) ->
       bootstrap:
         files: [
           { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/lib', src: ['bootstrap.less'], dest: 'tmp/' },
-          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/fonts', src: ['*'], dest: 'dist/fonts' }
+          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/fonts', src: ['*'], dest: 'dist/web/fonts' }
         ]
     clean: ['tmp']
 
